@@ -21,6 +21,16 @@ const mapItems = item => Object.assign({}, {
   },
   icon: {
     path: './icon.png'
+  },
+  mods: {
+    cmd: {
+      arg: item.homepage_uri,
+      subtitle: 'View project homepage.'
+    },
+    alt: {
+      arg: item.source_code_uri,
+      subtitle: 'View project source code.'
+    }
   }
 });
 
