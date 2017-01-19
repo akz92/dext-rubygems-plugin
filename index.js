@@ -44,6 +44,7 @@ module.exports = {
     makeRequest(opts)
       .then((body) => {
         const items = body
+          .slice(0, 20)
           .map(mapItems)
 
         resolve({ items });
